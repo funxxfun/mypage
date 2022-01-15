@@ -207,6 +207,9 @@ span:nth-child(6) {
 .pf-list p {
   margin-bottom: 36px;
 }
+.pf-list a:hover{
+  color: red;
+}
 .pf-list p:last-child {
   margin-bottom: 0;
 }
