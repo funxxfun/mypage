@@ -8,6 +8,8 @@
   <title>未来型薬剤師</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
 </head>
 <body>
   <header class="header">
@@ -24,6 +26,9 @@
         </li>
         <li class="header-item">
           <a href="#profile">profile</a>
+        </li>
+        <li class="header-item">
+          <a href="#contact">contact</a>
         </li>
       </ul>
     </nav>
@@ -96,7 +101,7 @@
     <section id="portfolio" class="pf">
       <div class="section-inner">
         <div class="section-heading">
-          <h2>PORTFOLIOS</h2>
+          <h2>PORTFOLIO</h2>
           <h3>私の作品</h3>
         </div>
         <div class="pf-contents">
@@ -143,6 +148,45 @@
             <p>Twitter</p>
             <p>Over40 WebClub</p>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- キービジュアル CONTACT  -->
+    <section id="contact" class="contact">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>CONTACT</h2>
+          <h3>お問い合わせ</h3>
+          <h4>(現在準備中です)</h4>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="form-item">
+              <label>お問い合わせ項目:</label>
+              <select name="item" class="form-item-input" disabled>
+                <option value="">お問い合わせ項目を選択</option>
+                <option value="website">サイトについて</option>
+                <option value="portfolio">作品について</option>
+                <option value="work">お仕事のご相談について</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="name">お名前：</label>
+              <input id="name" type="text" name="name" placeholder="お名前" class="form-item-input" disabled>
+            </div>
+            <div class="form-item">
+              <label for="mail">メールアドレス：</label>
+              <input id="mail" type="email" name="email" placeholder="メールアドレス" class="form-item-input" disabled>
+            </div>
+            <div class="form-item">
+              <label for="comment">お問い合わせ内容：</label><br>
+              <textarea id="comment"  class="text-area" rows="10" cols="30" placeholder="お問い合わせ内容を入力してください" disabled></textarea>
+            </div>
+            <div class="form-item-submit">
+              <input type="submit" value="送信" disabled>
+            </div>
+          </form>
         </div>
       </div>
     </section>

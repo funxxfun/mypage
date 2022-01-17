@@ -37,6 +37,7 @@ a {
   color: #000;
 }
 /* ヘッダーここまで */
+
 /* キービジュアルここから */
 .keyVisual {
   margin-bottom: 188px;
@@ -218,12 +219,12 @@ span:nth-child(6) {
 }
 /* pfここまで */
 /* profileここから */
-.profile{
-  background-color: rgba(225, 100, 125, 0.2);
-  padding-top: 120px;
+.profile {
+  background-color: #e1647d33;
+  padding: 120px 50px;
 }
 .profile-contents {
-  padding: 50px;
+  padding: 50px 150px;
 }
 .profile-contents h2 {
   font-size: 16px;
@@ -239,6 +240,43 @@ span:nth-child(6) {
   display: flex;
 }
 /* profileここまで */
+/* contactここから */
+.contact {
+  padding: 120px 50px;
+  background-color: rgba(200, 255, 200, 0.5);
+}
+.form {
+  padding: 50px 0;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+.form-item {
+  display: flex;
+  justify-items: center;
+  font-size: 28x;
+  font-weight: 700;
+  padding: 10px;
+}
+label {
+  width: 50%;
+  height: 30px;
+  text-align: right;
+}
+.form-item-input {
+  width: 250px;
+  margin-left: 10px;
+  border-color: #fffbf0;
+  outline: none;
+}
+.text-area {
+  width: 250px;
+  margin-left: 10px;
+  border-color: #fffbf0;
+  outline: none;
+}
+
+/* contactここまで */
 /* フッターここから */
 .footer {
   text-align: center;
@@ -247,7 +285,7 @@ span:nth-child(6) {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  padding-bottom: 24px;
+  padding: 20px;
 }
 /* フッターここまで */
 /* レスポンシブここから */
@@ -272,7 +310,10 @@ span:nth-child(6) {
     background-color: rgba(255, 255, 255, 0.5);
   }
   .header-item {
-    margin-right: 16px;
+    margin-right: 8px;
+  }
+  .header-item:nth-last-child() {
+    margin-right: 0;
   }
   .header-list {
     text-align: center;
@@ -303,6 +344,9 @@ span:nth-child(6) {
   }
   .section-heading h3 {
     font-size: 14px;
+  }
+  .section-heading h4 {
+    font-size: 12px;
   }
   .section-inner {
     width: auto;
@@ -381,6 +425,32 @@ span:nth-child(6) {
   }
   .name, .way, .address, .sns {
     display: block;
+  }
+  /* contactここから */
+  .form {
+    width: auto;
+    display: block;
+  }
+  .form-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: block;
+    align-items: center;
+  }
+  .form-item-input {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  .text-area {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 100px;
+    width: 100%;
+    border-radius: 8px;
   }
   /* footerここから */
   footer {
