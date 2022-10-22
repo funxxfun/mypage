@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>記録画面</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="wrapper">
+                <h1>内容を記録しますか？</h1>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper">
+                <div class="main-contents">
+                    <div>
+                      <!-- 「はい」未実装 -->
+                        <input type="button" value="はい" onclick="location.href='#'" style="width:50%; height:50px;" color="#993333" class="disabled">
+                    </div>
+                    <div>
+                        <input type="button" value="いいえ(トップページへ戻る)" onclick="location.href='index.html'" style="width:50%; height:50px;" color="#993333">
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <ul>
+                        <li><a href="javascript:history.back()">戻る</a></li>
+                    </ul>
+                </div>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <p>©️ph-algo 2022</p>
+            </footer>
+        </div>
+    </body>
+</html>

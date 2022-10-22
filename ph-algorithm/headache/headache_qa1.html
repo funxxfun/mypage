@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QA画面</title>
+        <script>
+            function alertFunction1(){
+                alert("本当に終了しますか？");
+            }
+        </script>
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="wrapper">
+                <h1 class="title">
+                    急激な増悪や神経学的症状の確認
+                </h1>
+            </header>
+        </div>
+        <div class="main-container">
+            <div class="main wrapper">
+                <div class="main-contents">
+                    <div class="question">
+                        <p>急激に悪化した？<br>または麻痺、痺れやめまいはありますか？</p>
+                    </div>
+                    <div class="answer">
+                        <div class="yes-no">
+                            <button type="button" class="yes" onclick="location.href='../template/emergency.html'" value="yes">はい</button>
+                            <button type="button" class="no" onclick="location.href='../template/recommendation.html'" value="no">いいえ</button>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class="comment">
+                            <h3>[頭部外傷の確認]</h3>
+                            <p>
+                                切創、皮下血腫、骨折、<br>
+                                急性硬膜下血腫、<br>
+                                急性硬膜外血腫など<br>
+                                慢性硬膜下血腫は<br>数週〜数ヶ月の外傷
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <ul>
+                        <li><a href="javascript:history.back()">戻る</a></li>
+                        <li><button onclick="alertFunction1(), location.href='../index.html'">終了</button></li>
+                    </ul>
+                </div>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <p>©︎ph-algo 2022</p>
+            </footer>
+        </div>
+    </body>
+</html>

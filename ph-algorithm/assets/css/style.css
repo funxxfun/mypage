@@ -1,48 +1,149 @@
-＊ {
+* {
   margin: 0 auto;
-  padding: 0 10px;
   box-sizing: border-box;
-  position: relative;
-}
-
-/* home.htmlここから */
-header {
   text-align: center;
 }
-.title {
-  background-color: rgb(236, 236, 169);
-  margin: 0 auto;
-  font-size: 28px;
-  border-radius: 15px;
-  width: 50%;
-  text-align: center;
-}
-.mode {
-  text-align: center;
-  margin: 40px;
-}
 
-.main-mode {
-  margin: 30px;
+/* 共通項目 */
+.header-container {
+  padding: 20px 0;
 }
-.practice-mode {
-  margin: 50px;
+.main-container {
+  padding: 10px 0;
 }
-
+.main-contents {
+  padding: 10px;
+}
+.main-footer {
+  padding-bottom: 10px 0;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+.main-footer ul {
+  display: flex;
+}
 footer {
-  text-align: center;
+  border-top: olive solid 1px;
+  padding: 10px;
 }
 
 /* menuここから */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .menu-item {
-  background-color: skyblue;
-  text-align: center;
+  margin: 8px auto;
+  padding: 8px 0;
+  width: 240px;
+  background-color: lightblue;
+}
+.menu-item a.disabled {
+  pointer-events: none;
+  color: #000;
+}
+
+/* QA画面ここから */
+.question {
+  padding: 10px 0;
+  margin: 10px auto;
+  border: solid 1px blue;
+  width: 50%;
+}
+.answer {
+  margin: 30px auto;
+  width: 50%;
+}
+.yes-no button {
+  margin: 0 20px;
+  font-size: 20px;
+}
+.yes {
+  background-color: green;
+  color: white;
+}
+.no {
+  background-color: orange;
+  color: white;
+}
+.answer .text-area {
+  height: 160px;
+  background-color: rgb(146, 223, 146);
+  border: gray 1px solid;
+}
+.answer .choice li {
+  width: 70%;
+  background-color: rgb(80, 180, 219);
+}
+.answer .choice li a {
+  text-decoration: none;
+  color: white;
+}
+.answer .comment {
+  padding: 16px 0;
+  background-color: rgb(245, 245, 102);
+  border: gray 1px solid;
+}
+/* 疑い疾患画面ここから */
+.answer .suspect-disease {
+  display: flex;
+  margin: 8px 0;
+  padding: 8px 0;
+  background-color: rgb(233, 199, 199);
+}
+.suspect-disease button {
+  background-color: #668ad8;
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.suspect-disease button:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* トリアージ画面ここから */
+.triage .title {
+  width: 70%;
+  padding: 8px 0;
+  margin: 16px auto;
+  font-size: 24px;
+}
+.triage .comment {
+  width: 70%;
   padding: 10px;
-  margin: 10px;
-  width: 20%;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.triage .comment p {
+  margin: 10px 0;
+}
+.emergency .title {
+  background-color: red;
+  color: white;
+}
+.emergency .comment {
+  border: red double ;
+}
+.recommendation .title {
+  border: solid 5px orange;
+  color: orange;
+}
+.recommendation .comment {
+  border: orange double ;
+}
+.consultation .title {
+  border: solid 1px green;
+}
+.consultation .comment {
+  border: green double ;
+  font-size: 18px;
+}
+.medicine {
+  margin: 16px 0;
+}
+.medicine-list {
+  border-bottom: 1px solid #000;
+  text-align: left;
 }
